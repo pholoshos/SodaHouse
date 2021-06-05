@@ -24,7 +24,7 @@ class Uploader:
         self.ftp.connect(host, port)
         print (self.ftp.getwelcome())
         try:
-            print ("Logging in...")
+            print ("now logging in...")
             self.ftp.login(userName, password)
             self.ftp.cwd("bla.softmoremo.co.za/liveStream")
             
