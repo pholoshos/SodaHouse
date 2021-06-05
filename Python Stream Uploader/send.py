@@ -16,8 +16,8 @@ class Uploader:
 
     def login(self):
         host  = "ftp.softmoremo.co.za"
-        userName   = "f4418011"
-        password = "E@qA!hw4"
+        userName   = ""
+        password = ""
  
   
         port = 21
