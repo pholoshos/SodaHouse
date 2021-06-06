@@ -1,0 +1,64 @@
+nav {
+    background-color:dimgrey;
+}
+.dark {
+    
+}
+
+nav ul li a {
+    color: white;
+}
+.button {
+    border : none;
+    color: white; 
+}
+.button.delete {
+    background-color: orangered;
+}
+.button.new {
+    background-color: limegreen;
+}
+.button.view {
+    background-color: dodgerblue;
+}
+.button.edit {
+    background-color:orange;
+}
+.button.delete{
+    background-color:red;
+}
+.button.delete:hover {
+   background-color: darkred;
+}
+table {
+   
+}
+.text-white {
+
+}
+.warningText{
+    color: orangered;
+    font-weight: bolder;
+}
+.goodText{
+    color:green;
+    font-weight: bolder;
+}
+.status {
+    color: orange;
+    font-weight: bolder;
+}
+.text-other{
+ 
+}
+.center-btn{
+    background-color: lightgreen;
+    margin-top: 10px;
+}
+h6 t {
+    color: orange;
+}
+
+
+
+

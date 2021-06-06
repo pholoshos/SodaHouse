@@ -1,0 +1,6 @@
+{"shows":[
+    { "show":"Music forever", "hour":19,"minutes":0,"duration":3600,"link":"abc.m3u8" },
+    { "show":"Music forever", "hour":20,"minutes":15,"duration":36000,"link":"h/abc.m3u8" },
+    { "show":"Music forever", "hour":20,"minutes":0,"duration":3600,"link":"abc.m3u8" }
+
+  ]}

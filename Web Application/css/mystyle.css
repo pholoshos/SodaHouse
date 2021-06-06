@@ -1,0 +1,505 @@
+
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+nav.client , .nav.client {
+    background-color: #4CAF50;
+}
+
+
+
+.userDetails small {
+    font-size: 0.9em;
+    color: lightslategrey;
+}
+.userDetails {
+    display: none;
+}
+.button {
+    padding: 14px;
+    margin-top: 20px;
+    width : auto;
+    border: 1px solid grey;
+    background-color: white;
+    color : black;
+    border-radius: 4px;
+    
+}
+.button.del {
+    border-color: red;
+    color : red;
+}
+
+
+.cardView {
+    background-image: url('/deliveryApp/backView.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    box-shadow: 0px 4px 5px 0px;
+    
+}
+
+.cardView h1 {
+    font-size: 2em;
+}
+.cardHeader {
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin: 2px;
+    width: 50%;
+}
+.cardbutton-icon {
+    width: 40px;
+    margin-bottom: -5px;
+    margin-right: 5px;
+    height: auto;
+}
+.divider {
+    width: 100%;
+    height: 8px;
+    border-radius: 8px;
+    background-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.sideText {
+    color : white;
+}
+@media print {
+    
+    .nav , .button, .sidenav, .side-nav ,input, .right , li ,a ,select {
+        display: none;
+
+    }
+    .userDetails {
+        display: grid;
+        float: right;
+
+    }
+    table {
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+   
+}
+.c {
+    width: 300px;
+}
+
+input, select {
+    width: 80%;
+    padding: 12px;
+    margin-top: 20px;
+}
+.icon {
+    width: 40px;
+    height: auto;
+}
+.icon3 {
+    width: 40px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: -30px;
+}
+.icon-2 {
+    width: 20px;
+    height: auto;
+    padding: 20px;
+    margin-bottom: -20px;
+}
+.button-icon {
+    width: 20px;
+    margin-bottom: -5px;
+    margin-right: 5px;
+    height: auto;
+}
+.brand-lg {
+    width: 30px;
+    height: auto;
+    margin-right: 40px; 
+}
+.w {
+    color: orange;
+}
+.warningText{
+    color: grey;
+    font-weight: bolder;
+}
+.state {
+    
+}
+.state:hover {
+    color: grey;
+}
+
+.goodText{
+    color:green;
+    font-weight: bolder;
+}
+.status {
+    color: orange;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+
+
+.fade-enter-active , .fade-leave-active , .fade2-enter-active, .fade2-leave-active {
+    transition: all 0.5s ease-in-out;
+}
+.fade-enter , .fade-leave  {
+    opacity:  0;
+    transform: translateX(-100px);
+}
+.fade2-enter, .fade2-leave {
+    transform: translateX(100px);
+}
+.opt {
+    list-style: none;
+    margin: 5px;
+}
+.opt  :hover {
+    color: white;
+}
+.newStatus {
+    color: lightsalmon;
+}
+th , td {
+    text-align: start;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-right-style: none;
+    border-top-style: none;
+    border-left-style: none;
+    
+}
+.link {
+    text-decoration: none;
+    color: white;
+}
+.link.c {
+    color: black;
+}
+@media only screen and (min-width : 701px){
+    .mobile-site {
+        display: none;
+    }
+    .nav {
+        background-color: #2874a6;
+        padding: 20px;
+        box-shadow: 0px 0px 5px 0px;
+        position:;
+    }
+    nav.client , .nav.client {
+        background-color: #4CAF50;
+    }
+    .nav .brand {
+        font-size: 2.4em;
+        color: white;
+        padding: 20px;
+    }
+    
+    body{
+        margin: 0;
+    }
+    .sidenav {
+     
+        height: 100%;
+        background-color:black;
+        border-radius: 0px 4px 4px  0px;
+    }
+    .main {
+        padding: 50px;
+        overflow: scroll;
+        height : 600px;
+        overflow-y: scroll;
+    }
+  
+    th , td {
+        text-align: start;
+        padding: 10px;
+        border: 1px solid lightgrey;
+        border-right-style: none;
+        border-top-style: none;
+        border-left-style: none;
+        
+    }
+    tr{
+        
+    }
+  
+    .homeView {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    } 
+    
+    .card p {
+        font-size: 1.2em;
+        color: white;
+    }
+    
+    .sidenav ul li {
+        list-style: none;
+        margin-top: 60px;
+        color: white;
+        
+    }
+    .cont {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr 10fr;
+    }
+    .mytablediv {
+        width: 100%;
+        height: auto;
+    }
+  
+    .nav .right {
+        float: right;
+        margin-right: 100px;
+        color: white;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:700px){
+    .desktop-site{
+        display: none;
+    }
+    .container {
+        margin: 10px;
+        
+}
+nav.client , .nav.client {
+    background-color: #4CAF50;
+}
+nav{
+    background-color:   #2e86c1   ;
+}
+.not-found  form {
+    width: 90%;
+}
+
+.side-nav {
+    width:  50%;
+    background-color : black;
+    height: 100%;
+    position: absolute;
+    color: white;
+    display : grid;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    z-index: 2;
+}
+.side-nav ul {
+    list-style: none;
+    display: inline-block;
+   
+}
+.side-nav ul li {
+    padding: 10px;
+}
+.mobileTable {
+    display: grid;
+    height: 80%;
+    overflow: scroll;
+}
+.notMobile {
+    display: none;
+    
+}
+    .stats {
+        display: grid;
+        text-align: left;
+        padding: 20px;
+    }
+
+
+    .menu {
+        display: block;
+        float: right;
+    }
+       .right {
+        display: none;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    font-size: 1.1em;
+    overflow: hidden;
+    
+    position: sticky;
+  }
+ 
+  .st {
+    
+      
+  
+  }
+  
+  select {
+      margin-top: 5px;
+      width:50%;
+      padding: 10px;
+      border-style: solid;
+      border-color: black;
+      border-width: 1px;
+      border-radius: 4px;
+  
+  }
+  option {
+      border-style: none;
+  }
+  
+  .details {
+      height: 100%;
+  }
+  input {
+      padding: 14px;
+      margin-top : 5px;
+      border-style: solid;
+      border-color: grey;
+      border-radius: 4px;
+  }
+  
+  .not-found {
+  
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+  }
+  
+  
+  .active {
+      
+  }
+  .warningText{
+      color: grey;
+      font-weight: bolder;
+  }
+  .goodText{
+      color:green;
+      font-weight: bolder;
+  }
+  .status {
+      color: orange;
+      font-weight: bolder;
+      font-size: 1.4em;
+  }
+
+  nav ul li {
+    float: left;
+  }
+  .center{
+  
+  }
+  .control {
+      position: sticky;
+  }
+  .control ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  .control li {
+      display: inline-block;
+     
+  }
+  
+   .modal li {
+        list-style-type: none;
+    }
+ 
+  
+  .lg {
+      width: 40px;
+      height: auto;
+  }
+  .brand {
+      font-size: 1.5em;
+      font-weight: bolder;
+      padding-left: 14px;
+  }
+  footer {
+      background-color: dimgrey;
+      height: 80px;
+      text-align: center;
+  }
+  .modal .button {
+     
+  }
+  p,h2,h1, h3 ,h5,h6,h4, a ,small, label{
+      color: black;
+  }
+  
+  footer h6 {
+      padding-top: 10px;
+      color: white;
+  }
+  body {
+      margin: 0;
+      color : black;
+      background-color:   white;
+      font-weight: lighter ;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .rou {
+      text-decoration: none;
+      color: white;
+  }
+  .container2 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin : 10px;
+  }
+  
+  
+   nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  nav ul li button {
+      padding: 6px 18px;
+      border: none;
+      border-radius: 4px;
+      margin-top: 10px;
+  }
+  
+  
+  /* Change the link color to #111 (black) on hover */
+  nav ul li a:hover {
+    background-color:grey;
+  }
+  
+  .left {
+      float: left;
+      padding-left: 100px;
+     
+  }
+  .right li input {
+      padding: 6px;
+      height: 12px;
+      margin: 10px;
+      border-style: none;
+      border-radius: 4px;
+  }
+}
+.line {
+    background-color: dimgray;
+    width: 100%;
+    height: 1px;
+    border-radius: 5px;
+}

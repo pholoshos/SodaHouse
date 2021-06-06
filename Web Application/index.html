@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ 
+  <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hls.js/0.5.14/hls.min.js" integrity="sha512-js37JxjD6gtmJ3N2Qzl9vQm4wcmTilFffk0nTSKzgr3p6aitg73LR205203wTzCCC/NZYO2TAxSa0Lr2VMLQvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript" src="js/vuex.js"></script>
+	<script type="text/javascript" src="js/vue.js"></script>
+	<script type="text/javascript" src="js/axios.min.js"></script>
+  <script src="js/hls.min.js" integrity="sha512-js37JxjD6gtmJ3N2Qzl9vQm4wcmTilFffk0nTSKzgr3p6aitg73LR205203wTzCCC/NZYO2TAxSa0Lr2VMLQvQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <title>SodaHouse Rooms</title>
   <style>
     body, .card{
@@ -33,14 +37,16 @@
     <a class="nav-link" href="#">Channels</a>
     <a class="nav-link" href="#">Info</a>
   </nav>
-  <div class="container">
+  <div id="app">
+    
+    <div class="container">
       <br>
       <div class="d-flex justify-content-center">
         <img style="margin-right: 8px;" height="40" src="ic.png">
-        <h2>  SodaHouse HallWay </h2>
+        <h2>{{show}} </h2>
       </div>
       <div class="d-flex justify-content-center">
-        <p>Duration : 13:00 to 20:00</p>
+        <p>{{description}}</p>
       </div>
       <div class="d-flex justify-content-center">
         
@@ -58,6 +64,9 @@
 
 
   </div>
+
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
   <!-- Or if you want a more recent alpha version -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@alpha"></script> -->
