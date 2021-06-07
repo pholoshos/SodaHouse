@@ -34,22 +34,24 @@ function load(link){
 }
 
 
-function play(){    
+function play(station){ 
+  load(shows[station].link)   
   console.log("play")
   if(c >= 0){
       video.play();
+      document.getElementById('play').innerHTML = "Now playing";
           if(1 == 2){
               st.innerHTML = "playing live stream.. ."
           }else{
             time = new Date();
-            var startHour = shows[1].hour;
-            var startMinutes =  shows[1].minutes;
+            var startHour = shows[station].hour;
+            var startMinutes =  shows[station].minutes;
             var startSeconds = startMinutes*60+startHour*60*60; 
             var hours =  time.getHours();
             var minutes =  time.getMinutes();
       
             var currrSecond = minutes*60+hours*60*60+time.getSeconds();
-            var playTime = 213000;
+            var playTime = shows[station].duration;
             
             var difference = (currrSecond - startSeconds);
             txt.innerHTML = difference;
@@ -80,7 +82,7 @@ var app = new Vue({
   el: '#app',
   data: {
     message: 'Hello Vue!',
-    show : 'Sugar stores',
+    show : 'SodaHouse',
     shows : null,
     description : 'more tunes'
 
@@ -102,7 +104,10 @@ var app = new Vue({
         .then(function(response){
           shows = response.data.shows;
           this.shows = shows;
-          load(shows[1].link)
+
+          
+          
+          
           
         })
      }

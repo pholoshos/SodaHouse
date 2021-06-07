@@ -34,33 +34,57 @@
 <body>
   <nav class="nav">
     <a class="nav-link active" href="#">SodaHouse</a>
-    <a class="nav-link" href="#">Channels</a>
+
     <a class="nav-link" href="#">Info</a>
   </nav>
   <div id="app">
     
     <div class="container">
-      <br>
-      <div class="d-flex justify-content-center">
-        <img style="margin-right: 8px;" height="40" src="ic.png">
-        <h2>{{show}} </h2>
-      </div>
-      <div class="d-flex justify-content-center">
-        <p>{{description}}</p>
-      </div>
-      <div class="d-flex justify-content-center">
-        
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" height="100%" src="bc.jpg">
-          <div class="card-body">
-            <p id="status">Now Listening .. .</p>
-            <video  controls id="video"  ></video>
-            <button onclick="play()" class="btn btn-danger">listen</button>
-            <a href="#" class="btn btn-warning">report</a>
-            <p id="t"></p>
+      <div class="row">
+
+        <div class="col-md-6">
+
+          <br>
+          <div class="d-flex justify-content-center">
+            <img style="margin-right: 8px;" height="40" src="ic.png">
+            <h2>{{show}} </h2>
           </div>
+          <div class="d-flex justify-content-center">
+            <p>{{description}}</p>
+          </div>
+          <div class="d-flex justify-content-center">
+            
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" height="100%" src="bc.jpg">
+              <div class="card-body">
+                <p id="status">Now Listening .. .</p>
+                <video  controls id="video"  ></video>
+                <button id="play" onclick="play(1)" class="btn btn-danger">listen</button>
+                <a href="#" class="btn btn-warning">report</a>
+                <p id="t"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6">
+          <br>
+          <h4>Available Stations</h4>
+          <p>click a station to listen </p>
+          <br>
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action">
+              Cras justo odio
+            </button>
+            <button type="button" onclick="play(1)" class="list-group-item list-group-item-action">Voice of Africa</button>
+            <button type="button" onclick="play(2)" class="list-group-item list-group-item-action">Chill season</button>
+            <button type="button" onclick="play(4)" class="list-group-item list-group-item-action">Locals only</button>
+            <button type="button" onclick="play(5)" class="list-group-item list-group-item-action" disabled>Vestibulum at eros</button>
+          </div>
+
         </div>
       </div>
+
 
 
   </div>
