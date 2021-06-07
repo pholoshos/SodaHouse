@@ -8,7 +8,7 @@ var shows  = null;
 st.innerHTML = "hello";
 function load(link){
   st.innerHTML = "";
-  console.log("loading")
+  console.log("loadin")
   var videoSrc = link;
   
   //var videoSrc = 'h/abc.m3u8';
